@@ -82,6 +82,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.6.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     ffi (1.9.10)
     formatador (0.2.5)
     foundation-rails (6.1.2.0)
@@ -260,6 +265,7 @@ DEPENDENCIES
   childprocess
   coffee-rails (~> 4.1.0)
   compass-rails
+  factory_girl_rails
   foundation-rails
   guard-rspec
   guard-spork
