@@ -1,4 +1,4 @@
-module ApplicationHelper
+RSpec.configure do |config|
   def full_title(page_title)
     base_title = "Ruby on Rails Tutorial Sample App"
 
@@ -8,4 +8,6 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+
+  config.include ApplicationHelper
 end
