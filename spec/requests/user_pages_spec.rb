@@ -40,6 +40,13 @@ RSpec.describe "UserPages", type: :request do
   		it "should create a user" do
   			expect { click_button submit }.to change(User, :count).by(1)
   		end
+
+      describe "after submission" do
+        before { click_button submit }
+
+        it { should have_title('Sign Up') }
+        it { should have_content('error') }
+      end
   	end
   end
 end
